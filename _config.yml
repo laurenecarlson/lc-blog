@@ -25,3 +25,6 @@ plugins:
   - jekyll-menus
   - jekyll-feed
   - jekyll-archives
+
+sass:
+  style: compressed

@@ -1,0 +1,43 @@
+.btn,
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  padding: 0.2em 1em;
+  color: #ffffff;
+  border-radius: .4rem;
+  background-color: $link-color;
+  font-family: $font-family-sans;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  &:hover {
+    color: $link-color;
+    border-color: currentColor;
+    background-color: white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-color;
+    border-color: currentColor;
+    background-color: white;
+  }
+}

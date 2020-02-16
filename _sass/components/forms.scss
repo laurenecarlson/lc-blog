@@ -1,0 +1,72 @@
+label {
+  font-family: $font-family-sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  display: block;
+
+  fieldset & {
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: $font-family-serif;
+    font-weight: normal;
+  }
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email],
+input[type=search],
+input[type=number],
+input[type=url],
+input[type=datetime],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=date] {
+  max-width: 100%;
+  background: #fff;
+  color: $body-text-color;
+  font-size: 1.6rem;
+  padding: 0.8em;
+  margin: 0;
+  border: 1px solid $brand-gray;
+  -webkit-appearance: none;
+
+  &:focus {
+    background: #fff;
+    border: 1px solid $link-color;
+    outline: 0;
+    box-shadow: inset 0 0 0 1px $link-color;
+  }
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  color: $body-text-color;
+  font-size: 1.4rem;
+  padding: 0.8em;
+  margin: 0;
+  border: 1px solid $brand-gray;
+  appearance: none;
+
+  &:focus {
+    background: #fff;
+    border: 1px solid $link-color;
+    outline: 0;
+    box-shadow: inset 0 0 0 1px $link-color;
+  }
+}
+
+/* Bugfix for issue in Safari 13 causing browser to crash when `optimizeLegibility` is used. */
+select,
+select * {
+  text-rendering: auto !important;
+}

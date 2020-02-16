@@ -1,4 +1,12 @@
 ---
 ---
 
-@import '../_sass/components/layout'
+@import '../_sass/base/variables';
+@import '../_sass/base/reset';
+@import '../_sass/base/typography';
+@import '../_sass/base/media';
+
+@import '../_sass/components/layout';
+@import '../_sass/components/tables';
+@import '../_sass/components/forms';
+@import '../_sass/components/buttons';
