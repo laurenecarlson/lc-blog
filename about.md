@@ -8,7 +8,6 @@ layout: landing-page
 textline: A multidisciplinary centre of experts who are essential to patient-oriented
   research.
 publish_date: 2017-12-01 04:00:00 +0000
-show_staff: true
 menu:
   navigation:
     identifier: _about
