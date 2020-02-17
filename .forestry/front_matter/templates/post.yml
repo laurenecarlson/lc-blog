@@ -38,5 +38,14 @@ fields:
   type: text
   hidden: true
   default: post
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - slider
+  - landing-page
+  config:
+    min: 
+    max: 
 pages:
 - _posts/2020-02-20-board-under-bed.md
