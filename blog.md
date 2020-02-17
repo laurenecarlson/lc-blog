@@ -8,6 +8,5 @@ hero_button:
   text: ''
   href: ''
 textline: ''
-published: false
 
 ---
