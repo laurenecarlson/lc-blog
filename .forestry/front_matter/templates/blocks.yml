@@ -1,4 +1,13 @@
 ---
 label: blocks
 hide_body: true
-fields: []
+fields:
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - slider
+  - post
+  config:
+    min: 
+    max: 
