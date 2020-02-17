@@ -13,31 +13,68 @@ input[type=reset] {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  margin: 2px 0;
-  border: solid 1px transparent;
-  padding: 0.2em 1em;
-  color: #ffffff;
-  border-radius: .4rem;
-  background-color: $link-color;
+  margin: 0 1rem 2rem 0;
+  padding: 0.2em 3.2em;
+  height: 4.8rem;
+  color: $body-text-color;
+  border-radius: 2.4rem;
+  background-color: $brand-blush;
+  border: 1px solid $brand-blush;
   font-family: $font-family-sans;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .1em;
-
-  &:active {
-    transform: translateY(1px);
-    filter: saturate(150%);
-  }
+  box-shadow: 0px .8rem 2.4rem rgba(0, 0, 0, 0.15);
+  transition: background-color .2s ease-in, color .2s ease-in, transform .2s ease-in, border .2s ease-in;
 
   &:hover {
-    color: $link-color;
-    border-color: currentColor;
-    background-color: white;
+    background-color: lighten($link-color, 10%);
+    border: 1px solid lighten($link-color, 10%);
+    color: #fff;
   }
 
   &:hover,
   &:focus {
-    color: $link-color;
-    border-color: currentColor;
-    background-color: white;
+    background-color: lighten($link-color, 10%);
+    border: 1px solid lighten($link-color, 10%);
+    color: #fff;
+    transform: translateY(-0.6rem);
+  }
+
+  &:active {
+    color: #fff;
+    transform: translateY(-0.4rem);
+    background-color: lighten($link-color, 5%);
+    border: 1px solid lighten($link-color, 10%);
+  }
+}
+
+.btn--transparent,
+button.btn--transparent,
+input[type=button].btn--transparent,
+input[type=submit].btn--transparent,
+input[type=reset].btn--transparent {
+  background: transparent;
+  border-color: transparent;
+
+  &:hover {
+    background-color: $brand-blush;
+    border: 1px solid $brand-blush;
+    color: $body-text-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $brand-blush;
+    border: 1px solid $brand-blush;
+    color: $body-text-color;
+    transform: translateY(-0.6rem);
+  }
+
+  &:active {
+    color: $body-text-color;
+    transform: translateY(-0.4rem);
+    background-color: $brand-blush;
+    border: 1px solid $brand-blush;
   }
 }

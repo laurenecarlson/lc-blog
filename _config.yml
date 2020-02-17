@@ -1,6 +1,6 @@
-title: LC Blog
-short_title: LC Blog
-description: Lifestyle blog for LC
+title: Vår Livsstil
+short_title: Vår Livsstil
+description:
 baseurl:
 permalink: "/:path/"
 defaults:

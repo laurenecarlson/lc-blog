@@ -1,20 +1,20 @@
 {% comment %}
-	The default layout for the site, which is extended by all other layouts.
-	Includes the document <head>, main navigation and page footer
+  The default layout for the site, which is extended by all other layouts.
 {% endcomment %}
 
-{% include head.html %}
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include nav.html %}
 
-{% include nav.html %}
+  {% include hero.html %}
 
-{% include hero.html %}
+  {{ content }}
 
-{% comment %}
-	Any layout that extends this layout will have its contents
-	added as the content variable
-{% endcomment %}
-
-{{ content }}
-
-{% include footer.html %}
+  {% include footer.html %}
+</body>
+</html>
 

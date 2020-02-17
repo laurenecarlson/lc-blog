@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $body-text-color;
   font-family: $font-family-serif;
   font-weight: normal;
-  line-height: 1.2;
+  line-height: 1.25;
   text-transform: none;
 }
 
@@ -163,13 +163,17 @@ h6, .h6 {
   font-family: $font-family-sans;
 }
 
+.italic {
+  font-style: italic;
+}
+
 hr {
   width: 100%;
   margin: 2.4rem 0;
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px dashed $brand-green;
+  border-bottom: 1px dashed #fff;
 }
 
 blockquote,
@@ -206,12 +210,14 @@ ol {
   font-size: 1.8rem;
   font-weight: 400;
   margin: 2em 0;
+  padding-left: 2rem;
   line-height: 1.2;
 }
 
 ul ul,
 ol ol {
-  margin: 0 2em;
+  margin: 1rem 0;
+  padding-left: 2em;
 }
 
 ul li {
@@ -242,8 +248,8 @@ dd {
 
 pre {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 2rem 0;
+  margin: 2rem 0;
   overflow: auto;
   overflow-y: hidden;
   font-size: 1.3rem;
