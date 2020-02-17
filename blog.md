@@ -9,6 +9,9 @@ hero_button:
   href: ''
 textline: ''
 menu:
+  navigation:
+    identifier: _posts
+    weight: 3
   footer:
     identifier: _posts
     weight: 1
