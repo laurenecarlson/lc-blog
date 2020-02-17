@@ -16,6 +16,7 @@ defaults:
 collections:
   posts:
     output: true
+    permalink: /blog/:title/
 
 jekyll-archives:
   enabled: all
