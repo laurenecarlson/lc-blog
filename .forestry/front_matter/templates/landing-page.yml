@@ -47,4 +47,5 @@ fields:
   hidden: true
   default: home
 pages:
+- blog.md
 - index.md
