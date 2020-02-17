@@ -1,7 +1,7 @@
 ---
 heading: ''
 sub_heading: ''
-layout: home
+layout: posts
 title: Blog
 banner_image: ''
 hero_button:
